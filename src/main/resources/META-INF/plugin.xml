@@ -1,0 +1,29 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>dev.gaphunter.nginxcompanion</id>
+    <name>Nginx Companion</name>
+    <vendor>Gap Hunter Labs</vendor>
+    <description><![CDATA[
+        <p>Syntax highlighting and directive completion for nginx config files —
+        opt-in by content, not by hijacking every <code>.conf</code> file on disk.</p>
+        <p>Completion is backed by the real, official catalog of nginx directives (940 directives
+        across 94 modules, from nginx.org's own documentation index), so suggestions are directives
+        that actually exist, not a hand-picked shortlist.</p>
+        <p>Free. No license nags, no analytics, no telemetry prompts, no lockups on unrelated edits.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Nginx Config" implementationClass="dev.gaphunter.nginxcompanion.lang.NginxFileType"
+                   fieldName="INSTANCE" language="Nginx"/>
+        <fileTypeDetector implementation="dev.gaphunter.nginxcompanion.detection.NginxFileTypeOverrider"/>
+        <lang.parserDefinition language="Nginx"
+                                implementationClass="dev.gaphunter.nginxcompanion.lang.NginxParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Nginx"
+                                        implementationClass="dev.gaphunter.nginxcompanion.lang.NginxSyntaxHighlighterFactory"/>
+        <completion.contributor language="Nginx"
+                                 implementationClass="dev.gaphunter.nginxcompanion.completion.NginxDirectiveCompletionContributor"/>
+        <annotator language="Nginx" implementationClass="dev.gaphunter.nginxcompanion.highlighting.NginxDirectiveAnnotator"/>
+    </extensions>
+</idea-plugin>
