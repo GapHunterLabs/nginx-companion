@@ -16,12 +16,14 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="Nginx Config" implementationClass="dev.gaphunter.nginxcompanion.lang.NginxFileType"
-                   fieldName="INSTANCE" language="Nginx"/>
+                   fieldName="INSTANCE" language="Nginx" order="first"/>
         <fileTypeDetector implementation="dev.gaphunter.nginxcompanion.detection.NginxFileTypeOverrider"/>
         <lang.parserDefinition language="Nginx"
                                 implementationClass="dev.gaphunter.nginxcompanion.lang.NginxParserDefinition"/>
         <lang.syntaxHighlighterFactory language="Nginx"
                                         implementationClass="dev.gaphunter.nginxcompanion.lang.NginxSyntaxHighlighterFactory"/>
+        <editorHighlighterProvider filetype="Nginx Config"
+                                    implementationClass="dev.gaphunter.nginxcompanion.lang.NginxEditorHighlighterProvider"/>
         <completion.contributor language="Nginx"
                                  implementationClass="dev.gaphunter.nginxcompanion.completion.NginxDirectiveCompletionContributor"/>
         <annotator language="Nginx" implementationClass="dev.gaphunter.nginxcompanion.highlighting.NginxDirectiveAnnotator"/>
