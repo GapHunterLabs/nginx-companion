@@ -24,6 +24,6 @@
   `nginx.conf`, `mime.types`, etc.) as nginx config when its content
   actually looks like one. It never claims every `.conf` file on disk.
 
-[Unreleased]: https://github.com/kendjm/nginx-companion/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/kendjm/nginx-companion/compare/0.1.0...0.1.1
-[0.1.0]: https://github.com/kendjm/nginx-companion/commits/0.1.0
+[Unreleased]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.0...0.1.1
+[0.1.0]: https://github.com/GapHunterLabs/nginx-companion/commits/0.1.0

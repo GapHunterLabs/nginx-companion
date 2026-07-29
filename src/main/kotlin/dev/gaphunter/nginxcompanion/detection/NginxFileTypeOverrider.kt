@@ -21,5 +21,5 @@ class NginxFileTypeOverrider : FileTypeRegistry.FileTypeDetector {
     }
 
     @Deprecated("Overrides a deprecated platform member; still the correct hook for cache invalidation.")
-    override fun getVersion(): Int = 1
+    override fun getVersion(): Int = 2
 }
