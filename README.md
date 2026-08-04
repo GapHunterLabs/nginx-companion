@@ -39,6 +39,11 @@ Open any file that looks like an nginx config (`nginx.conf`, files under
 `sites-available/`/`conf.d/`, etc.) and directive names get highlighted
 and auto-completed automatically — no configuration needed.
 
+## Enterprise / Team Licensing
+
+Need enterprise features, custom directive catalogs, or team licensing?
+Contact us at **kennyj.diazm@gmail.com**.
+
 ## Development
 
 ```
