@@ -42,7 +42,7 @@ and auto-completed automatically — no configuration needed.
 ## Enterprise / Team Licensing
 
 Need enterprise features, custom directive catalogs, or team licensing?
-Contact us at **kennyj.diazm@gmail.com**.
+Contact us at **gaphunterlabs@gmail.com**.
 
 ## Development
 
