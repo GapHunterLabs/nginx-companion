@@ -15,6 +15,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Nginx Companion" displayType="BALLOON"/>
         <fileType name="Nginx Config" implementationClass="dev.gaphunter.nginxcompanion.lang.NginxFileType"
                    fieldName="INSTANCE" language="Nginx" order="first"/>
         <fileTypeDetector implementation="dev.gaphunter.nginxcompanion.detection.NginxFileTypeOverrider"/>
