@@ -4,6 +4,15 @@
 
 ## [Unreleased]
 
+## [0.1.3]
+
+### Added
+
+- Review/star CTA: after 15 distinct real nginx directives are actually
+  accepted from the completion popup (not merely shown in the list), a
+  one-time notification asks whether to rate the plugin on Marketplace,
+  with a permanent "Don't ask again" option.
+
 ## [0.1.2]
 
 ### Fixed
@@ -38,7 +47,8 @@
   `nginx.conf`, `mime.types`, etc.) as nginx config when its content
   actually looks like one. It never claims every `.conf` file on disk.
 
-[Unreleased]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.3...HEAD
+[0.1.3]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/GapHunterLabs/nginx-companion/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/GapHunterLabs/nginx-companion/commits/0.1.0
