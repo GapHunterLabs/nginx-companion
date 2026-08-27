@@ -61,8 +61,7 @@ Same result in both — this rules out "sandbox-only artifact" and
    branch.
 3. Bumping `NginxFileTypeOverrider.getVersion()` from `1` to `2` to
    force-invalidate the platform's file-type detection cache (the
-   documented mechanism for this — see
-   `../INTELLIJ_PLATFORM_KNOWLEDGE.md`) — no change in behavior, but
+   platform's own documented mechanism for this) — no change in behavior, but
    kept as a real improvement regardless (was hardcoded at `1`
    forever, meaning any future detection-logic change would silently
    never invalidate old cached results without this bump existing as
@@ -199,10 +198,9 @@ or VirtualFile ID rather than by project-local sandbox state.
    `"Loaded custom plugins"` this project expected to grep for **did not
    appear at all** in this run, which is itself a new finding: that log
    line is not a reliable universal signal of plugin load status across
-   all IDE versions/configurations, contradicting the "Lesson" already
-   written in the K2-mode section of `AUTOMATION_PLAYBOOK.md` — UI
-   confirmation (Settings > Plugins) is the more reliable check when the
-   log line doesn't appear.
+   all IDE versions/configurations — UI confirmation (Settings >
+   Plugins) is the more reliable check when the log line doesn't
+   appear.
 
 **Result: identical failure.** No syntax coloring at all, same generic
 gray "unrecognized word" underline under the config's directive words.
