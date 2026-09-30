@@ -3,6 +3,10 @@
 IntelliJ-family plugin. Syntax highlighting and directive completion for
 nginx config files.
 
+![Nginx Companion: nginx config highlighting and directive completion, with no paid tier](docs/media/hero.gif)
+
+On its own: [Directive completion](docs/media/01-completion.gif)
+
 ## Why it exists
 
 Born from real evidence in JetBrains Marketplace reviews, not
