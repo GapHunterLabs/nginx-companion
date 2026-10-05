@@ -43,10 +43,12 @@ Open any file that looks like an nginx config (`nginx.conf`, files under
 `sites-available/`/`conf.d/`, etc.) and directive names get highlighted
 and auto-completed automatically — no configuration needed.
 
-## Enterprise / Team Licensing
+## Support
 
-Need enterprise features, custom directive catalogs, or team licensing?
-Contact us at **gaphunterlabs@gmail.com**.
+- **Bugs and feature requests:** [GitHub Issues](https://github.com/GapHunterLabs/nginx-companion/issues)
+- **Questions, or custom rules for a team's codebase:** **gaphunterlabs@gmail.com**
+- **Security vulnerabilities:** report privately as described in [SECURITY.md](SECURITY.md), not in a public issue.
+- **Privacy and network behavior:** [PRIVACY.md](PRIVACY.md)
 
 ## Development
 
